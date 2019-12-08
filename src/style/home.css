@@ -1,0 +1,41 @@
+.home {
+    padding: 10%;
+}
+
+.list {
+
+}
+.item {
+    width: 100%;
+    height: 8rem;
+    position: relative;
+    background: azure;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.leftArea {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rightArea {
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+}
+img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 25% 0;
+}
+p{
+    margin: 0;
+}
+.tips {
+    padding: 5%;
+}
