@@ -32,7 +32,9 @@ class Home extends React.Component {
             list: a.list,
         })
    }
-
+   getNew = () => {
+        var a = '';
+   }
 
     render(){
        const {list} = this.state;
