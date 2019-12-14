@@ -9,31 +9,30 @@
 // app2.all('/', (req, res) => res.send('hello2'));
 // app2.listen(8889);
 export const data = {
-    list: [
-        {
-            "img": "1.pic",
-            "text": "aaaaaa0000"
-        }
-    ]
+  list: [
+    {
+      img: '1.pic',
+      text: 'aaaaaa0000'
+    }
+  ]
 }
 
-function fun1(a) {
-    return new Promise((resolve, reject) => {
-        if(a) {
-            setTimeout(()=> {
-                resolve(data);
-            }, 3000)
-            // resolve(data);
-        } else {
-            reject();
-        }
-    })
+function fun1 (a) {
+  return new Promise((resolve, reject) => {
+    if (a) {
+      setTimeout(() => {
+        resolve(data)
+      }, 3000)
+      // resolve(data);
+    } else {
+      // eslint-disable-next-line
+      reject(error)
+    }
+  })
 }
 
 export const pro1 = fun1(true).then(
-    (res) => {
-       return res;
-    }
-);
-
-
+  (res) => {
+    return res
+  }
+)
