@@ -22,7 +22,7 @@ class Home extends React.Component {
   }
 
   componentDidMount () {
-     this.getData();
+    this.getData()
   }
 
   /* eslint-disable */
