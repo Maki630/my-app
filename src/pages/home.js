@@ -1,7 +1,7 @@
 import React from 'react'
 import ContentLoader from 'react-content-loader'
 import '../style/home.css'
-// import { pro1 } from '../controller/homeController'
+import { pro1 } from '../controller/homeController'
 // import promise from "../controller/homeController";
 
 const MyLoader = () => (
@@ -22,17 +22,17 @@ class Home extends React.Component {
   }
 
   componentDidMount () {
-    // this.getData();
+     this.getData();
   }
 
   /* eslint-disable */
-    // getData = async () => {
-    //     const a = await pro1;
-    //     console.log(a);
-    //     this.setState({
-    //         list: a.list,
-    //     })
-    // }
+     getData = async() =>{
+        const a = await pro1;
+        console.log(a);
+        this.setState({
+            list: a.list,
+        })
+    }
 
     /* eslint-disable */
 
